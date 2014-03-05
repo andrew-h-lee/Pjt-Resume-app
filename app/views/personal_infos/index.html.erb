@@ -1,0 +1,47 @@
+<h1>Listing personal_infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Tagline</th>
+      <th>About</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Twitter</th>
+      <th>Linkedin</th>
+      <th>Facebook</th>
+      <th>Google</th>
+      <th>Url</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personal_infos.each do |personal_info| %>
+      <tr>
+        <td><%= personal_info.name %></td>
+        <td><%= personal_info.tagline %></td>
+        <td><%= personal_info.about %></td>
+        <td><%= personal_info.email %></td>
+        <td><%= personal_info.address %></td>
+        <td><%= personal_info.phone %></td>
+        <td><%= personal_info.twitter %></td>
+        <td><%= personal_info.linkedin %></td>
+        <td><%= personal_info.facebook %></td>
+        <td><%= personal_info.google %></td>
+        <td><%= personal_info.url %></td>
+        <td><%= link_to 'Show', personal_info %></td>
+        <td><%= link_to 'Edit', edit_personal_info_path(personal_info) %></td>
+        <td><%= link_to 'Destroy', personal_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personal info', new_personal_info_path %>

@@ -11,7 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140219090436) do
+ActiveRecord::Schema.define(version: 20140303090019) do
+
+  create_table "personal_infos", force: true do |t|
+    t.string   "name"
+    t.string   "tagline"
+    t.text     "about"
+    t.string   "email"
+    t.string   "address"
+    t.string   "phone"
+    t.string   "twitter"
+    t.string   "linkedin"
+    t.string   "facebook"
+    t.string   "google"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "project_images", force: true do |t|
+    t.string   "image"
+    t.string   "caption"
+    t.integer  "project_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "project_images", ["project_id"], name: "index_project_images_on_project_id"
+
+  create_table "projects", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "priority"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

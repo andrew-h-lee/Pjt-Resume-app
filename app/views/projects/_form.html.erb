@@ -1,0 +1,33 @@
+<%= simple_nested_form_for(@project) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.input :name, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :description, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :priority, input_html: { class: 'form-control'} %>
+  </div>
+    <%= f.simple_fields_for(:project_images, html: { role: 'form' }) do |project_image_form| %>
+    <%= project_image_form.input :caption, input_html: { class: 'form-control'} %>
+  <div class="form-group">
+    <%= project_image_form.input :image, as: :file %>
+  </div>
+  <div class="form-group">
+    <%= project_image_form.link_to_remove "Remove this image" %>
+  </div>
+  <% end %>
+  <p><%= f.link_to_add "Add an image", :project_images %></p>
+
+  <% if @project.project_images %>
+    <% @project.project_images.each do |image| %>
+      <%= image_tag image.image, class: 'img-thumbnail' %>
+    <% end %>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.button :submit %>
+  </div>
+<% end %>
