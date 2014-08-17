@@ -5,6 +5,10 @@ gem 'rails', '4.0.2'
 gem 'devise'
 gem 'nested_form'
 gem 'carrierwave'
+gem 'rolify'
+gem 'cancan'
+gem 'rails_admin'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
