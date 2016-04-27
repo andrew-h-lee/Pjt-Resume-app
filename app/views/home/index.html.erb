@@ -1,287 +1,546 @@
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-12">
-					<h1><%= @personal_info.name %></h1>
-					<br>
-					<br>
-					<br>
-					<br>
-					<h3>Web Developer </h3>
-				</div><!--/.col-lg-12 -->
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/.#headerwrap -->
-
-	<section id="about" name="about"></section>
-	<div id="intro">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>ABOUT</h5>
-				</div>
-				<div class="col-lg-6">
-					<p>I am a web developer with a strong focus on Ruby On Rails. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile and tablet interfaces. I also have skills in other fields like accounting, finance & web development.</p>
-				</div>
-
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #intro -->
-
-
-	<!--EDUCATION DESCRIPTION -->
-	<section id="resume" name="resume"></section>
-	<div class="container desc">
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-1">
-				<h5>EDUCATION</h5>
-			</div>
-			<div class="col-lg-6">
-				<p><t>Bachelor of Business Studies</t><br/>
-					Charles Sturt University <br/>
-					<i>Mjr in Accounting & Management</i>
-				</p>
-			</div>
-			<div class="col-lg-3">
-				<p><sm>MARCH 2013 - Current</sm><br/>
-					<imp><sm>GRADUATING IN OCTOBER 2014</sm></imp><br/>
-				</p>
-			</div>
-			<div class="col-lg-6 col-lg-offset-3">
-				<p><t>Rails Coder Course</t><br/>
-					Coder Factory <br/>
-					<i>Ruby On Rails, Web Development</i>
-				</p>
-			</div>
-			<div class="col-lg-3">
-				<p><sm>JANUARY 2014 - MAY 2014</sm><br/>
-					<imp><sm>Proficient Level in Framework</sm></imp><br/>
-				</p>
-			</div>
-			<div class="col-lg-6 col-lg-offset-3">
-				<p><t>AngularJS Course</t><br/>
-					Coder Factory <br/>
-					<i>AngularJS, Web Development</i>
-				</p>
-			</div>
-			<div class="col-lg-3">
-				<p><sm>MAY 2014 - JUNE 2014</sm><br/>
-					<imp><sm>Intermediate Level</sm></imp><br/>
-				</p>
-			</div>
-			<div class="col-lg-6 col-lg-offset-3">
-				<p><t>Advanced Diploma in Accounting</t><br/>
-					TAFE Northern Sydney Institute <br/>
-					<i>Mjr in Accounting</i>
-				</p>
-			</div>
-			<div class="col-lg-3">
-				<p><sm>FEBURARY 2011 - NOVEMBER 2012</sm></p>
-			</div>
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-
-
-	<!--WORK DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-1">
-				<h5>WORK</h5>
-			</div>
-			<div class="col-lg-6">
-				<p><t>Front-end Developer</t><br/>
-					Black Tie Corp. <br/>
-				</p>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="col-lg-3">
-				<p><sm>AUGUST 2012 - CURRENT</sm></p>
-			</div>
-			<div class="col-lg-6 col-lg-offset-3">
-				<p><t>Web Designer - Intern</t><br/>
-					Onassis Ltd. <br/>
-				</p>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="col-lg-3">
-				<p><sm>JUNE 2010 - JULY 2012</sm></p>
-			</div>
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-
-
-	<!--AWARDS DESCRIPTION -->
-	<!--<div class="container desc">
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-1">
-				<h5>AWARDS</h5>
-			</div>
-			<div class="col-lg-6">
-				<p><t>Best Web Design</t><br/>
-					Black Tie Site <br/>
-				</p>
-			</div>
-			<div class="col-lg-3">
-				<p><sm>NOVEMBER 2013</sm></p>
-			</div>
-			<div class="col-lg-6 col-lg-offset-3">
-				<p><t>Designer of the Year</t><br/>
-					Awwwards Site
-				</p>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			</div>
-			<div class="col-lg-3">
-				<p><sm>2013</sm></p>
-			</div>
-		</div>--><!--/.row -->
-		<!--<br>
-	</div>--><!--/.container -->
-
-
-	<!--SKILLS DESCRIPTION -->
-	<section id="skillset" name="skillset"></section>
-	<div id="skillswrap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-lg-offset-2">
-					<h5>SKILLS</h5>
-				</div>
-				<div class="text-center">
-					<canvas id="cs_radar_chart" height="900"  width="800" ></canvas>
-				<script>
-					var data = {
-					labels : [ "Ruby on Rails","HTML","CSS","Javascript","AngularJS","Accounting","Bootstrap"],
-					datasets : [
-					{
-					fillColor : '#1FF22D',
-					strokeColor : '#CDCD1D',
-					pointColor : '#460EE2',
-					pointStrokeColor : '#CD029E',
-					data : [ 85,80,72,61,55,74,78]
-					}
-					]
-					}
-					var options = {
-					scaleOverlay : true,
-					scaleShowLine : true,
-					scaleLineColor : '#12BFE2',
-					scaleLineWidth : 2,
-					scaleOverride : false,
-					scaleSteps : null,
-					scaleStepWidth : null,
-					scaleStartValue : null,
-					scaleShowLabels : true,
-					scaleFontFamily : "'Calibri'",
-					scaleFontSize : 12,
-					scaleFontStyle : 'normal',
-					scaleFontColor : '#FFFFFF',
-					scaleShowLabelBackdrop : true,
-					scaleBackdropColor : '#CD029E',
-					scaleBackdropPaddingY : 2,
-					scaleBackdropPaddingX : 2,
-					angleShowLineOut : true,
-					angleLineColor : '#E2E2E2',
-					angleLineWidth : 2,
-					pointDot : true,
-					pointDotRadius : 3,
-					pointDotStrokeWidth : 1,
-					pointLabelFontFamily : "'Ubuntu'",
-					pointLabelFontStyle : 'bold',
-					pointLabelFontSize : 20,
-					pointLabelFontColor : '#FFFFFF',
-					datasetStroke : true,
-					datasetStrokeWidth : 2,
-					datasetFill : true,
-					animation : true,
-					animationSteps : 60,
-					animationEasing: 'easeOutQuart',
-					}
-					var ctx = $("#cs_radar_chart").get(0).getContext("2d");
-					var myRadar = new Chart(ctx).Radar(data,options);
-
-				</script>
-
-			</div>
-			<div class="col-lg-3 col-lg-offset-2">
-				<h5>Relevant Skills</h5>
-			</div>
-
-			<div class="col-lg-3">
-				<h5>In Progress</h5>
-			</div>
-
-			<div class="col-lg-3">
-				<h5>Other Skills</h5>
-			</div>
-
-			</div><!--/.row -->
-			<br>
-		</div><!--/.container -->
-	</div><!--/ #skillswrap -->
-
-	<!--PORTFOLIO DESCRIPTION -->
-	<section id="work" name="work"></section>
-	<div class="container desc">
-		<div class"row">
-			<div class="col-lg-11 col-lg-offset-1">
-				<h5>PORTFOLIO</h5>
-				</div><!--col-lg-11 col-lg-offset-1 -->
-			<div class"row">
-				<% if @projects %><% @projects.each_with_index do |project, index| %>
-				<div class="col-lg-4 col-lg-offset-3">
-					<p><%= image_tag project.project_images.first.image, width: '250px' %></p>
-				</div>
-				<div class="col-lg-5">
-					<p><%= project.name %></p>
-					<p><%= project.description %>
-						<!--<sm><more><i class="icon-tag"></i>Design Info</sm></more> -->
-					</p>
-				</div>
-			</div><!--/.row -->
-			<% end %>
-			<% end %>
-			<br>
-		</div><!--/.row -->
-
-		    <!-- Footer -->
-<section id="contact" name="contact"></section>
-	<div id="footwrap">
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-lg-12">
-                        <h3>CONTACT</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-		<div id="c">
-			<div class="container">
-				<p>Created by <a href="http://thecoderfactory.com">The Coder Factory</a></p>
-			</div>
-		</div>
-   </footer>
+<<<<<<< HEAD
+<div id="headerwrap">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-lg-12">
+        <h1><%= @personal_info.name %></h1>
+        <hr class="star-light">
+        <h3>Full Stack Web Developer</h3>
+        <ul class="list-inline">
+          <li>
+            <a href="http://twitter.com/" class="btn btn-default btn-lg">
+              <i class="fa fa-twitter fa-fw"></i>Twitter</a>
+          </li>
+          <li>
+            <a href="https://github.com/" class="btn btn-default btn-lg">
+              <i class="fa fa-github-alt fa-fw"></i>Github</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/" class="btn btn-default btn-lg">
+              <i class="fa fa-linkedin fa-fw"></i>Linkedin</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.col-lg-12 -->
+    </div>
+    <!--/.row -->
+    <br>
   </div>
+  <!--/.container -->
+</div>
+<!--/.#headerwrap -->
+
+<section id="about" name="about">
+  <div id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1">
+          <%= image_tag "technical/prog-bash02.png", alt:"images", id:"border-centered" %>
+        </div>
+        <div class="col-lg-1">
+          <h2>ABOUT</h2>
+        </div>
+        <br/>
+        <div class="col-lg-9  col-lg-offset-1">
+          <p>I am a Full Stack Web developer with a strong focus on Ruby On Rails. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile and tablet interfaces. I also have skills in other fields like
+            accounting,finance & web development.
+          </p>
+        </div>
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/ #intro -->
+  <br/>
+</section>
+
+<!--EDUCATION DESCRIPTION -->
+<section id="resume" name="resume">
+  <div id="resume">
+    <div class="container desc">
+      <div class="row">
+        <div class="col-lg-1">
+          <%= image_tag "technical/prog-bash02.png", alt:"images", id:"border-right" %>
+        </div>
+        <div class="col-lg-1 ">
+          <h2>EDUCATION</h2>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2">
+          <p>
+            <t>Bachelor of Business Studies</t><br/>
+            <a href="http://www.csu.edu.au/">Charles Sturt University</a>
+            <br/>
+            <i>Mjr in Accounting & Management</i><br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p>
+            <sm>MARCH 2013 - NOVEMBER 2014</sm><br/>
+          </p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-4">
+          <p>
+            <t>Rails Coder Course</t><br/>
+            <a href="https://coderfactory.com/">Coder Factory</a>
+            <br/>
+            <i>Ruby On Rails, Web Development</i><br/>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p>
+            <sm>JANUARY 2014 - MAY 2014</sm><br/>
+          </p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-4">
+          <p>
+            <t>AngularJS Course</t><br/>
+            <a href="https://coderfactory.com/">Coder Factory</a>
+            <br/>
+            <i>AngularJS, Web Development</i>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p>
+            <sm>MAY 2014 - JUNE 2014</sm><br/>
+          </p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-4">
+          <p>
+            <t>Advanced Diploma in Accounting</t><br/>
+            <a href="http://www.nsi.tafensw.edu.au/">TAFE Northern Sydney Institute</a>
+            <br/>
+            <i>Mjr in Accounting</i>
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <p>
+            <sm>FEBURARY 2011 - NOVEMBER 2012</sm>
+          </p>
+        </div>
+      </div>
+      <!--/.row -->
+      <hr/>
+    </div>
+    <!--/.container -->
+  </div>
+</section>
+
+<!--WORK DESCRIPTION -->
+<section id="volunteer" name="volunteer">
+<div id="volunteer">
+<div class="container desc">
+  <div class="row">
+    <div class="col-lg-1">
+      <%= image_tag "technical/prog-bash02.png", alt:"images", id:"border-right" %>
+    </div>
+    <div class="col-lg-1">
+      <h2>VOLUNTEER</h2>
+    </div>
+    <div class="col-lg-5 col-lg-offset-2">
+      <p>
+        <t>Volunteer</t><br/>
+        <a href="http://yowconference.com.au/">YOW! Conference 2015 (Sydney)</a>
+      </p>
+      <ul>
+        <li>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </li>
+        <li>
+          Lorem Ipsum has been the industry's standard dummy text ever since 1500s.
+        </li>
+        <li>
+          When an unknown printer took a galley of type and scrambled.
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <p>
+        <sm>DECEMBER 2015</sm>
+      </p>
+    </div>
+    <div class="col-lg-5 col-lg-offset-4">
+      <p>
+        <t>Volunteer</t><br/>
+        <a href="http://www.startcon.com/">StartCon 2015 (formerly SydStart 2015)</a>
+      </p>
+      <ul>
+        <li>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </li>
+        <li>
+          Lorem Ipsum has been the industry's standard dummy text ever since 1500s.
+        </li>
+        <li>
+          When an unknown printer took a galley of type and scrambled it.
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <p>
+        <sm>OCTOBER 2015</sm>
+      </p>
+    </div>
+    <div class="col-lg-5 col-lg-offset-4">
+      <p>
+        <t>Volunteer</t><br/>
+        <a href="http://www.papis.io/">PAPI.io 2015 Conference</a>
+      </p>
+      <ul>
+        <li>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </li>
+        <li>
+          Lorem Ipsum has been the industry's standard dummy text ever since 1500s.
+        </li>
+        <li>
+          When an unknown printer took a galley of type and scrambled book.
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <p>
+        <sm>AUGUST 2015</sm>
+      </p>
+    </div>
+  </div>
+  <!--/.row -->
+  <br/>
+  <br/>
+</div>
+<!--/.container -->
+</div>
+</section>
+
+<!--SKILLS DESCRIPTION -->
+<section id="skillset" name="skillset">
+  <div id="skillswrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1">
+          <%= image_tag "technical/prog-bash02.png", alt:"images", id:"border-right" %>
+        </div>
+        <div class="col-lg-11">
+          <h2>SKILLS</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-11 col-lg-offset-1">
+          <div class="cd-tabs">
+            <nav>
+              <ul class="cd-tabs-navigation">
+                <li>
+                  <a data-content="inbox" class="selected btn">
+                    <i class="fa fa-code-fork fa-fw"></i>Programming Skills</a>
+                </li>
+                <li>
+                  <a data-content="new" class="btn">
+                    <i class="fa fa-keyboard-o fa-fw"></i>Technical Skills</a>
+                </li>
+                <li>
+                  <a data-content="gallery" class="btn">
+                    <i class="fa fa-pencil-square-o fa-fw"></i>Design Skills</a>
+                </li>
+                <li>
+                  <a data-content="store" class="btn">
+                    <i class="fa fa-bar-chart-o fa-fw"></i>Business Skills</a>
+                </li>
+              </ul>
+              <!-- cd-tabs-navigation -->
+            </nav>
+
+            <ul class="cd-tabs-content">
+              <li data-content="inbox" class="selected">
+                <div class="col-md-2">
+                  <%= image_tag "prgming/RoR.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Ruby on Rails</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/prog-ruby.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Ruby Language</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">HTML5</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">CSS3</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/bootstrap.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Bootstrap</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/prog-js01.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">JavaScript</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">AngularJS</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">AngularJS</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">AngularJS</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">AngularJS</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">AngularJS</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "prgming/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">AngularJS</p><br/>
+                </div>
+              </li>
+
+              <li data-content="new">
+                <div class="col-md-2">
+                  <%= image_tag "technical/prog-django.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Django</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/prog-python.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Python</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/prog-js02.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">JavaScript</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/prog-jquery.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">JQuery</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">AngularJS</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/prog-bash02.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Command Line</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Command Line</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Command Line</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Command Line</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Command Line</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "technical/angularJS.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Command Line</p><br/>
+                </div>
+              </li>
+
+              <li data-content="gallery">
+                <div class="col-md-2">
+                  <%= image_tag "design/prog-java.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">Java</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "design/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+              </li>
+
+              <li data-content="store">
+                <div class="col-md-2">
+                  <%= image_tag "biz-canvas-02.png", alt:"images", id:"border-centered" %>
+                  <p class="centered">LEAN Stack</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "business/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Business Canvas</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "business/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "business/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "business/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "business/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "business/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "business/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "business/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+                <div class="col-md-2">
+                  <%= image_tag "business/", alt:"images", id:"border-centered" %>
+                  <p class="centered">Text</p><br/>
+                </div>
+              </li>
+            </ul>
+            <!-- cd-tabs-content -->
+          </div>
+          <!-- cd-tabs -->
+        </div>
+        </div>
+      </div>
+      <!--/.row -->
+      <br>
+    </div>
+    <!--/.container -->
+  </div>
+  <!--/ #skillswrap -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Resource jQuery -->
+</section>
+
+<!--PORTFOLIO DESCRIPTION -->
+<section id="work" name="work">
+  <div id="portfolio">
+    <div class="container desc">
+      <div class"row">
+        <div class="col-lg-1">
+          <%= image_tag "prgming/prog-ruby.png", alt:"images", id:"border-centered" %>
+        </div>
+        <div class="col-lg-11">
+          <h2>PORTFOLIO</h2>
+        </div>
+        <div class"row">
+          <% if @projects %><% @projects.each_with_index do |project, index| %>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <%= image_tag project.project_images.first.image, class:"img-thumbnail", width: '200px' %>
+              <div class="caption">
+                <t>Project Name: <%= project.name %></t>
+                <p>Description: <%= project.description %>
+                      <a class="btn btn-success btn-lg fa fa-github-alt" href="<%= project.github %>" role="button">
+                        Github Repo</a>
+                      <a class="btn btn-info btn-lg fa fa-behance" href="<%= project.behance %>" role="button">
+                        Screenshots</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <% end %>
+          <% end %>
+        </div>
+        <!--/.row -->
+        <br>
+      </div>
+    </div>
+  </div>
+<!--/.Portfolio -->
+</section>
+
+<!-- Footer -->
+<section id="contact" name="contact">
+  <div id="footwrap">
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-lg-12">
+              <h3><%= image_tag "prgming/prog-ruby.png", alt:"images", id:"border-centered" %>CONTACT</h3>
+              <ul class="list-inline">
+                <li>
+                  <a href="https://www.behance.net/" class="btn btn-default btn-lg">
+                    <i class="fa fa-behance fa-fw"></i>Behance</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" class="btn btn-default btn-lg">
+                    <i class="fa fa-twitter fa-fw"></i>Twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/" class="btn btn-default btn-lg">
+                    <i class="fa fa-github-alt fa-fw"></i>Github</a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/" class="btn btn-default btn-lg">
+                    <i class="fa fa-linkedin fa-fw"></i>Linkedin</a>
+                </li>
+                <li>
+                  <a href="mailto:" class="btn btn-default btn-lg">
+                    <i class="fa fa-inbox fa-fw"></i>Email</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="container desc">
+        <div class="c">
+          <p>Created by
+            <a href="http://coderfactory.com">The Coder Factory</a>
+          </p>
+          <h2>
+            Feel free to contact me
+          </h2>
+        </div>
+      </div>
+    </footer>
+  </div>
+</section>
 
 
 
