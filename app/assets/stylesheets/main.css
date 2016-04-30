@@ -21,7 +21,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
-    color: #333;
+    color: #39FF14;
 }
 
 
@@ -159,7 +159,7 @@ a:after {
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 500px;
+	min-height: 600px;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -266,6 +266,7 @@ a:after {
 .desc t {
 	color: #34495e;
 	font-weight: 700;
+	font-size: 20px;
 }
 
 .desc imp {

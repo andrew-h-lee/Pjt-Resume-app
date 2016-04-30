@@ -1,6 +1,5 @@
 BasicStarterTemplate::Application.routes.draw do
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
-  get 'about' => 'about#index'
 
   resources :project_images
 
@@ -9,5 +8,5 @@ BasicStarterTemplate::Application.routes.draw do
   resources :personal_infos
 
   devise_for :users
-  root 'home#index'
+  root :to => 'home#index'
 end

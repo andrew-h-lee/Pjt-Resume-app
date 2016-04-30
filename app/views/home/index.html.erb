@@ -472,10 +472,12 @@
             <div class="thumbnail">
               <%= image_tag project.project_images.first.image, class:"img-thumbnail", width: '200px' %>
               <div class="caption">
-                <t>Project Name: <%= project.name %></t>
-                <p>Description: <%= project.description %>
+                <t> <%= project.name %></t>
+                <p><%= project.description %></p>
+                <p>
                       <a class="btn btn-success btn-lg fa fa-github-alt" href="<%= project.github %>" role="button">
                         Github Repo</a>
+                      
                       <a class="btn btn-info btn-lg fa fa-behance" href="<%= project.behance %>" role="button">
                         Screenshots</a>
                 </p>
