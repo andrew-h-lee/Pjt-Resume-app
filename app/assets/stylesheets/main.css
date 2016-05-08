@@ -116,7 +116,7 @@ a:after {
 }
 
 #section-topbar ul#nav > li {
-	display: block;
+    display: block;
     float: left;
     padding: 0;
 }
