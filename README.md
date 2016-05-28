@@ -1,5 +1,9 @@
-The Coder Factory - Beginner Coder
+Project-Manage App
 ==================================
+
+Personal Website Management App. 
+Allows User to manage & display various Projects towards a broad audience.
+User able to upload image file relating to Project & related links.
 
 ## Starter App Template
 
