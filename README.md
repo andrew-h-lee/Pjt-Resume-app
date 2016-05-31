@@ -5,23 +5,21 @@ Project-Manage App
 * Allows User to manage & display various Projects towards a broad audience.
 * User able to upload image file relating to Project & related links.
 
-## Starter App Template
+## Tools Used:
 
-This template is a basic Rails app with the following features:
-
-1. Ruby 2.1.0
-1. Rails 4.0.2
-1. Heroku ready - pg and rails_12factor gems
-1. Bootstrap v3.1.1 - CSS template.
-1. Fontawesome - Awesome icon toolkit.
-1. Home page with navigation bar
+* Ruby 2.1.0
+* Rails 4.0.2
+* Heroku ready - pg & rails_12factor gems
+* Bootstrap v3.1.1 - CSS template.
+* Fontawesome - Awesome icon toolkit.
+* Home page with navigation bar
 
 Also includes the following gems:
 
-1. Simpleform - A Rails gem that makes the code for our forms simpler.
-1. BetterErrors - A Rails gem that gives more information on the errors we see in our app
-1. Quiet Assets - Reduces the log output
+* [Simpleform]() - A Rails gem that makes the code for our forms simpler.
+* [BetterErrors]() - A Rails gem that gives more information on the errors we see in our app
+* [Quiet Assets]() - Reduces the log output
 
-
+## Reference:
 
 Updated on 2014-02-14 by [@pedrogrande](https://github.com/pedrogrande) for [The Coder Factory](https://thecoderfactory.com)
