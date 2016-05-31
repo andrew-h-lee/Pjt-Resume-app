@@ -22,4 +22,4 @@ Also includes the following gems:
 
 ## Reference:
 
-Updated on 2014-02-14 by [@pedrogrande](https://github.com/pedrogrande) for [The Coder Factory](https://thecoderfactory.com)
+Updated on 2014-02-14 by [@pedrogrande](https://github.com/pedrogrande) of [The Coder Factory](https://thecoderfactory.com)
