@@ -1,7 +1,8 @@
-Project-Manage App
+Project-Resume App
 ==================================
 
 * Personal Website Management App. 
+* Intentionally, to showcase a User's Resume Online.
 * Allows User to manage & display various Projects towards a broad audience.
 * User able to upload image file relating to Project & related links.
 
@@ -21,5 +22,4 @@ Also includes the following gems:
 * [Quiet Assets]() - Reduces the log output
 
 ## Reference:
-
-Updated on 2014-02-14 by [@pedrogrande](https://github.com/pedrogrande) of [The Coder Factory](https://thecoderfactory.com)
+* [Kelvin Resume Theme](http://blacktie.co/demo/kelvin/)
