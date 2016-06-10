@@ -23,3 +23,4 @@ Also includes the following gems:
 
 ## Reference:
 * [Kelvin Resume Theme](http://blacktie.co/demo/kelvin/)
+* Updated on 2014-02-14 by [@pedrogrande](https://github.com/pedrogrande) of [The Coder Factory](https://coderfactory.com)
