@@ -8,8 +8,8 @@ Project-Resume App
 
 ## Tools Used:
 
-* Ruby 2.1.0
-* Rails 4.0.2
+* Ruby (v2.2.2)
+* Rails (v4.2.6)
 * Heroku ready - pg & rails_12factor gems
 * Bootstrap v3.1.1 - CSS template.
 * Fontawesome - Awesome icon toolkit.
