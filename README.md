@@ -2,6 +2,7 @@ Project-Resume App
 ==================================
 
 * Personal Website Management App. 
+* Formerly, a Prototype of *My Personal Website*
 * Intentionally, to showcase a User's Resume Online.
 * Allows User to manage & display various Projects towards a broad audience.
 * User able to upload image file relating to Project & related links.
