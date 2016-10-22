@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20160430075308) do
 
-  create_table "personal_infos", force: true do |t|
+  create_table "personal_infos", force: :cascade do |t|
     t.string   "name"
     t.string   "tagline"
     t.text     "about"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20160430075308) do
     t.datetime "updated_at"
   end
 
-  create_table "project_images", force: true do |t|
+  create_table "project_images", force: :cascade do |t|
     t.string   "image"
     t.string   "caption"
     t.integer  "project_id"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20160430075308) do
 
   add_index "project_images", ["project_id"], name: "index_project_images_on_project_id"
 
-  create_table "projects", force: true do |t|
+  create_table "projects", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "priority"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20160430075308) do
     t.string   "behance"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
