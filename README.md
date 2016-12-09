@@ -8,7 +8,7 @@ Project-Resume App
 * User able to upload image file relating to Project & related links.
 
 ## Screenshots
-[Behance Screenshots](https://www.behance.net/andrew-h-lee)
+[Behance Screenshots](https://www.behance.net/gallery/44773267/Pjt-Resume-App)
 
 ## Tools Used:
 
